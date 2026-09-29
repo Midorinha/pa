@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Questão D</title>
+</head>
+<body>
+
+<script>
+    let base = Number(prompt("Digite a base:"));
+    let expoente = Number(prompt("Digite o expoente:"));
+    let resultado = 1;
+    let contador = 1;
+
+    while (contador <= expoente) {
+        resultado = resultado * base;
+        contador++;
+    }
+
+    document.write(base + " elevado a " + expoente + " = " + resultado);
+</script>
+
+</body>
+</html>

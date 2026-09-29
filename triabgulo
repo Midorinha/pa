@@ -1,0 +1,7 @@
+<script>
+    var base=parseInt(prompt("Entre com a base"));
+    var altura=parseInt(prompt("Entre com a altura"));
+    var area =  base * altura/2;
+    document.write("A area = "+area);    
+
+</script>

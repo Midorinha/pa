@@ -1,7 +1,35 @@
-<script>
-    var anonasc=parseInt(prompt("Entre com ano de nascimento"));
-    var anoatual=parseInt(prompt("Entre com ano atual"));
-    var idade = anoatual - anonasc;
-    document.write("A idade = "+idade);    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var maior = 0;
+var menor = 1000;
+var i = 1;
 
-</script>
+do {
+    var aa = parseInt(prompt("Usuário " + i + " - Digite o ano atual:"));
+    var an = parseInt(prompt("Usuário " + i + " - Digite o ano de nascimento:"));
+    
+    var id = aa - an;
+    console.log("Usuário " + i + " tem " + id + " anos.");
+    
+    if (id > maior) {
+        maior = id;
+    }
+    if (id < menor) {
+        menor = id;
+    }
+    
+    i++;
+} while (i <= 5);
+
+console.log("A idade do mais velho é: " + maior);
+console.log("A idade do mais novo é: " + menor);
+    </script>
+</body>
+</html>
